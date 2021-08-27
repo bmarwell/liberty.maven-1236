@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
@@ -16,15 +16,13 @@
     <johnzon.version>1.2.12</johnzon.version>
     <log4j2.version>2.14.1</log4j2.version>
 
-    <liberty-maven-plugin.version>3.5-SNAPSHOT</liberty-maven-plugin.version>
+    <liberty-maven-plugin.version>3.4</liberty-maven-plugin.version>
     <wlp.version>21.0.0.6</wlp.version>
     <slf4j-api.version>1.7.30</slf4j-api.version>
 
     <!-- bootstrap properties -->
     <liberty.bootstrap.com.ibm.ws.logging.console.log.level>WARNING</liberty.bootstrap.com.ibm.ws.logging.console.log.level>
     <liberty.bootstrap.com.ibm.ws.logging.isoDateFormat>true</liberty.bootstrap.com.ibm.ws.logging.isoDateFormat>
-    <!-- jvm properties. Only the value us used here. -->
-    <liberty.jvm.log4j.configurationFile>-Dlog4j.configurationFile=${project.build.testOutputDirectory}/log4j2.xml</liberty.jvm.log4j.configurationFile>
     <!-- liberty vars available for replacement in server.xml. -->
     <liberty.var.default.http.host>localhost</liberty.var.default.http.host>
     <liberty.var.default.http.port>9080</liberty.var.default.http.port>
